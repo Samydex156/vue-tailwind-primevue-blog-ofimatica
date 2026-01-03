@@ -58,21 +58,21 @@ const getCategorySeverity = (cat) => {
 </script>
 
 <template>
-    <div class="space-y-8 max-w-7xl mx-auto p-4 lg:p-8">
-        <header class="text-left space-y-4">
-            <h1 class="text-3xl font-bold text-slate-900 font-outfit">Guías y Tutoriales</h1>
-            <p class="text-slate-600 max-w-2xl">
+    <div class="space-y-6 md:space-y-8 max-w-7xl mx-auto p-4 md:p-6 lg:p-8">
+        <header class="text-left space-y-3 md:space-y-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-slate-900 font-outfit">Guías y Tutoriales</h1>
+            <p class="text-sm md:text-base text-slate-600 max-w-2xl leading-relaxed">
                 Explora nuestra colección de guías detalladas para convertirte en un experto en herramientas de oficina.
             </p>
         </header>
 
-        <div class="flex flex-wrap gap-2 pb-4 overflow-x-auto">
+        <div class="flex gap-2 pb-2 overflow-x-auto scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 flex-nowrap md:flex-wrap">
             <Button v-for="cat in categories" :key="cat" :label="cat"
                 :severity="selectedCategory === cat ? 'primary' : 'secondary'" size="small" rounded
-                @click="selectedCategory = cat" class="whitespace-nowrap" />
+                @click="selectedCategory = cat" class="whitespace-nowrap shrink-0" />
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <article v-for="post in posts" :key="post.id"
                 class="flex flex-col bg-white rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all hover:-translate-y-2 group">
                 <div class="relative h-48 overflow-hidden">

@@ -62,19 +62,20 @@ const downloadFile = (url) => {
 </script>
 
 <template>
-    <div class="space-y-8 max-w-7xl mx-auto p-4 lg:p-8">
-        <header class="flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div class="space-y-2">
-                <h1 class="text-3xl font-bold text-slate-900 font-outfit">Sección de Prácticas</h1>
-                <p class="text-slate-600">Ejercicios guiados y propuestos para aplicar tus conocimientos.</p>
+    <div class="space-y-6 md:space-y-8 max-w-7xl mx-auto p-4 md:p-6 lg:p-8">
+        <header class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="space-y-2 text-center md:text-left">
+                <h1 class="text-2xl md:text-3xl font-bold text-slate-900 font-outfit">Sección de Prácticas</h1>
+                <p class="text-sm md:text-base text-slate-600">Ejercicios guiados y propuestos para aplicar tus
+                    conocimientos.</p>
             </div>
-            <div class="relative">
+            <div class="relative w-full md:w-auto">
                 <i class="pi pi-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
                 <InputText v-model="searchQuery" placeholder="Buscar práctica..." class="pl-10 w-full md:w-64" />
             </div>
         </header>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card v-for="practice in practices" :key="practice.id"
                 class="border border-slate-200 shadow-none hover:shadow-xl transition-all duration-300">
                 <template #content>
