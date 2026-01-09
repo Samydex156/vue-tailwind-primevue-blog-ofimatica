@@ -45,7 +45,7 @@ const categories = [
     <div class="space-y-16 pb-12">
         <!-- Hero Section -->
         <section
-            class="relative min-h-[450px] md:h-[500px] flex items-center justify-center overflow-hidden rounded-2xl md:rounded-3xl mx-2 md:mx-4 mt-2 md:mt-4">
+            class="relative min-h-112.5 md:h-125 flex items-center justify-center overflow-hidden rounded-2xl md:rounded-3xl mx-2 md:mx-4 mt-2 md:mt-4">
             <img src="/FondoOfi.png" alt="Ofmática Hero" class="absolute inset-0 w-full h-full object-cover">
             <div class="absolute inset-0 bg-linear-to-r from-blue-900/90 to-indigo-800/40"></div>
 

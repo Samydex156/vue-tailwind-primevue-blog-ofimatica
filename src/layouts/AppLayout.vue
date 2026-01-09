@@ -56,7 +56,7 @@ const navigate = (item) => {
                     </div>
                     <div v-if="isSidebarOpen" class="min-w-0">
                         <p class="text-xs font-bold text-slate-900 truncate">Samuel Durán</p>
-                        <p class="text-[10px] text-slate-500 truncate text-wrap">Profesor</p>
+                        <p class="text-[10px] text-slate-500 truncate text-wrap">Docente / Instructor</p>
                     </div>
                 </div>
             </div>
@@ -71,8 +71,8 @@ const navigate = (item) => {
                 </button>
                 <div class="flex items-center gap-4">
                     <div class="hidden sm:flex flex-col items-end">
-                        <span class="text-xs font-bold text-slate-900">Ofimatica Pro</span>
-                        <span class="text-[10px] text-indigo-600 font-medium">Panel Estudiante</span>
+                        <span class="text-xs font-bold text-slate-900">Ofimática Sábados</span>
+                        <span class="text-[10px] text-indigo-600 font-medium">Estudiantes</span>
                     </div>
                     <div
                         class="w-10 h-10 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 border border-indigo-100">
